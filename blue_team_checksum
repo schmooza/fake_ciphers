@@ -1,0 +1,6 @@
+message = 'ABC'
+
+length_of_message = str(len(message))
+message_with_checksum = message + length_of_message
+
+print(message_with_checksum)
