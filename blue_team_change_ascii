@@ -1,0 +1,9 @@
+message = "ABC"
+
+x = message.replace("B", "@@@")
+
+print (x)
+
+y = x.replace("@@@", "B")
+
+print (y)
