@@ -1,0 +1,38 @@
+# red team
+# attack drone with water cannon
+
+import random
+hit_drone = 5
+
+# the data goes here
+empty_list = []
+# run the test 5 times. Each time collect data.
+max = 5
+for n in range (0,max):
+    while True:
+        
+        print("fire at drone")
+        # makes a random number between 0 and 5.
+        hit_chance = random.randint(0,5)
+        
+        # add the number to the list.
+        empty_list.append(int(hit_chance))
+        print("debug",hit_chance)
+        # test to see if drone is hit
+        if hit_chance == 5:
+            print('Drone is hit, Red team wins.')
+            break
+        else:
+            print("Missed") 
+            pass
+wins = empty_list.sort()
+total = len(empty_list)
+
+print("Number of attacks",total)
+for n in empty_list:
+    print(n)
+
+  
+# copy the numbers into excell.        
+    
+
