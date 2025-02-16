@@ -1,0 +1,7 @@
+import pandas as pd
+
+message = " The money is in the bank."
+list_of_words = message.split()
+
+df = pd.DataFrame(list_of_words)
+print(df)
