@@ -1,0 +1,19 @@
+import pandas as pd
+import math
+
+message = " The money is in the big bank."
+print("orignial message: ", message)
+list_of_words = message.split()
+length_of_list = len(list_of_words)
+print("number of words in list:",length_of_list)
+
+cut_in_half = length_of_list / 2
+rounded = math.floor(cut_in_half)
+print("cut list at row: ",rounded)
+
+
+# Index where the list will be split
+n = rounded
+
+# Slice the list from the beginning to the nth index (not inclusive)
+first_slice = list_of_words[:n]
