@@ -1,0 +1,14 @@
+import random
+
+while True:
+    hit_drone = 5
+    print("fire at drone")
+    # makes a random number between 0 and 5.
+    hit_chance = random.randint(0,5)
+    print("debug",hit_chance)
+    # test to see if drone is hit
+    if hit_chance == 5:
+        print('Drone is hit, Red team wins.')
+        break
+    else:
+        print("Missed")
