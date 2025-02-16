@@ -1,0 +1,7 @@
+def encode(message):
+    encoded = message[::-1]
+    print (encoded)
+    
+
+message = "password = abc"
+encode(message)
